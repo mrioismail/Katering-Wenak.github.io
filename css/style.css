@@ -41,7 +41,7 @@ body {
 }
 
 .navbar .navbar-logo span {
-   font-style: italic;
+   font-weight: bold;
    color: var(--primary);
 }
 
@@ -82,36 +82,44 @@ body {
    display: none;
 }
 
-.home {
+.home-img {
    min-height: 100vh;
    display: flex;
    align-items: center;
-   background-image: url(../img/home.jpg);
+   background-image: url(../img/beranda.jpg);
    background-repeat: no-repeat;
    background-size: cover;
-   background-position: center;
+   background-position: center center;
+   width: 100%;
+   filter: blur(1px);
+   opacity: 0.5;
 }
 
 .home .content {
-   padding: 1.4rem 7%;
-   max-width: 60rem;
-   line-height: 1.5;
+   top: 20%;
+   left: 50%;
+   position: absolute;
+   z-index: 5;
+   transform: translate(-50%, 50%);
+   text-align: center;
 }
 
-.content h3 {
-   text-shadow: 2px 1px black;
+.home .content span {
+   color: var(--primary);
+}
+
+.home .content h3 {
    font-size: 2rem;
 }
 
-.content h1 {
-   text-shadow: 2px 1px black;
+.home .content h1 {
    font-size: 5rem;
    font-style: italic;
 }
 
 .home .content p {
    font-size: 1.3rem;
-   color: #010101;
+   color: #fff;
 }
 
 .home .pesan {
@@ -175,5 +183,10 @@ body {
 
    .home .content h1 {
       font-size: 4rem;
+   }
+
+   .home .content h3 {
+      font-size: 1.5rem;
+      padding: 0;
    }
 }
