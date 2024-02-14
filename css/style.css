@@ -133,8 +133,22 @@ body {
    margin-top: 1rem;
 }
 
-/* Media Queries */
+/* Tentang Kami */
+.about {
+   padding: 8rem 7% 1.4rem;
+}
 
+.about h2 {
+   font-size: 2.6rem;
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.about span {
+   color: var(--primary);
+}
+
+/* Media Queries */
 /* Laptop */
 @media (max-width: 1366px) {
    html {
